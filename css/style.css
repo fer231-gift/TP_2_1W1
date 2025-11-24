@@ -1,0 +1,84 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    font-size: 14px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* ///////////////////////////////// Général  */
+/* Les sélecteurs généraux ont un impact sur chacune des section de la page */
+body{
+    margin:0;
+    padding:0;
+}
+h1,h2,h3 {
+    margin:0;
+}
+figure{
+    margin:0;
+}
+img{
+    display:block;
+    width:100%;
+}
+
+
+
+section,header,footer{
+    min-height:100vh;
+}
+
+
+.centre {
+   max-width: 1100px;
+   margin : 0 auto;
+   background-color:   rgb(240 248 255 / 57%);
+}
+
+/* ///////////////////////  Couleurs d'arrière plan de chacune des section */
+
+.conteneur:nth-of-type(1){
+    background: url("../img/download.jfif")
+}
+.conteneur:nth-of-type(2){
+     background-color: rgb(100, 200, 23);
+}
+.conteneur:nth-of-type(3){
+      background-color: rgb(17, 118, 138);
+}
+.conteneur:nth-of-type(4){
+    background-color: rgb(163, 42, 182);
+}
+
+.conteneur:nth-of-type(5){
+    background-color: rgb(228, 205, 27);
+}
+
+.conteneur:nth-of-type(6){
+     background-color: rgb(44, 39, 4);
+}
+
+
+/* ////////////////////////////////////////////////// Accueil */
+
+.conteneur h1{
+ font-size: 60px;   
+
+}
+
+.menu, #chk-burger{
+    display: none;
+}
+
+label[for="chk-burger"]{
+    position: fixed;
+    top:10px;
+    right:130px;
+    z-index: 2;
+}
+
+#chk-burger:checked ~ .menu{
+    display: block;
+    align-content: flex-end ;
+}
