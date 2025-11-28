@@ -1,0 +1,281 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    font-size: 14px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* ///////////////////////////////// Général  */
+/* Les sélecteurs généraux ont un impact sur chacune des section de la page */
+body{
+    margin:0;
+    padding:0;
+}
+h1,h2,h3 {
+    margin:0;
+}
+figure{
+    margin:0;
+}
+img{
+    display:block;
+    width:100%;
+}
+
+
+
+section,header,footer{
+    min-height:100vh;
+}
+
+
+.centre {
+   max-width: 1100px;
+   margin : 0 auto;
+   background-color:   rgba(240, 248, 255, 0.623);
+}
+
+/* ///////////////////////  Couleurs d'arrière plan de chacune des section */
+
+.conteneur:nth-of-type(1){
+    background: url("../img/download.jfif")
+}
+.conteneur:nth-of-type(2){
+    background: url("../img/download.jfif")
+}
+.conteneur:nth-of-type(3){
+    background: url("../img/download.jfif")
+}
+.conteneur:nth-of-type(4){
+    background: url("../img/download.jfif")
+}
+
+.conteneur:nth-of-type(5){
+    background-color: rgb(228, 205, 27);
+}
+
+.conteneur:nth-of-type(6){
+     background-color: rgb(44, 39, 4);
+}
+
+
+/* ////////////////////////////////////////////////// Accueil */
+
+.conteneur.hero{
+    text-align: center;
+}
+.conteneur h1{
+ font-size: 60px; 
+color: rgb(0, 0, 0); 
+display: flex;
+justify-content: flex-start;
+}
+.conteneur h2{
+    font-size: 40px;   
+    font-weight: normal;
+    color: white;
+
+}
+
+.conteneur p{
+    font-size: 20px;
+    color: black;
+    margin-top: 10px;
+    margin-left: 10px; 
+
+}
+
+.bio{
+    margin-top: 20px;
+    font-size: 18px;
+    font-style: italic;
+    color: black;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+/* ////////////////////////////////////////////////// Menu mobile */
+/* sélecteurs qui cible le menu et la case à côcher */
+#chk-burger{
+    display: none; /* permet de rendre un élément invisible */
+    position: fixed;
+    top:20px;
+    right: 20px;
+}
+
+label[for="chk-burger"]{
+    position: fixed;
+    top:10px;
+    right:130px;
+    z-index: 2;
+}
+
+
+
+.menu{
+    padding : 10px;
+    background-color: #00000098;
+    width: 300px;
+    position: fixed;
+    top: 70px;
+    right: 20px;
+    
+
+    transform: translateX(110%);
+    transition: transform 1s;
+}
+
+/* sélecteurs qui cible le menu et la case à côcher */
+ #chk-burger{
+    display: none; /* permet de rendre un élément invisible */
+    position: fixed;
+    top:70px;
+    right: 20px;
+}
+
+.menu{
+    padding : 10px;
+    background-color: #00000098;
+    width: 120px;
+    position: fixed;
+    top: 70px;
+    right: 20px;
+    
+
+    transform: translateX(200%);
+    transition: transform 1s;
+}
+
+.menu__burger{
+    position: fixed;
+    top:20px;
+    right: 20px;
+}
+
+.menu a {
+    display : block;
+    text-decoration: none;
+    font-size: 15;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding:5px;
+    margin:8px;
+    color : #fff;
+    /* background-color: #afd4ea17; */
+    background: linear-gradient(to left, #00000000 , #01335056);
+}
+.menu a:hover{
+    background: linear-gradient(to right, #afd4ea , #70caff56);
+}
+
+
+/* 
+    Si la case à côcher est côcher selectionne le menu 
+    et rendre le menu visible 
+*/
+#chk-burger:checked ~ .menu {
+    /* permet de rendre un élément visible */
+transform: translateX(0);
+}
+
+
+
+
+
+
+/* ///////////////////////////////////////////////////////////// tableau */
+
+
+
+
+table{
+      margin : 40px 20px;  
+}
+.tableau {
+    width: 90%;
+
+    border-collapse: collapse; 
+    border: 1px solid #aaa;
+}
+.tableau th {
+     border: 1px solid #aaa;
+     padding : 15px 5px;
+     text-align: left;
+      background-color: #ffffff3d;
+}
+.tableau td {
+    border: 1px solid #aaa;
+    padding : 10px 5px;
+    background-color: #57575776;
+}
+.tableau .tres-haut{
+    background-color: red;
+}
+.tableau .tres-bas{
+    background-color: #0f0; 
+}
+/* ///////////////////////////////////////////////////////////// tableau légende */
+.legende td{
+    padding : 5px;
+}
+.legende .tres-haut{
+    background-color: red;
+    padding: 10px;
+}
+.legende .tres-bas{
+    background-color: #0f0;
+}
+/* ///////////////////////////////////////////////////////////// footer */
+footer{
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+footer a{
+    color: white;
+    text-decoration: none;
+}
+footer a:hover{
+    text-decoration: underline;
+}
+/* ///////////////////////////////////////////////////////////// bouton retour en haut */
+#btn-top{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#btn-top:hover{
+    background-color: rgba(0, 0, 0, 0.8);
+}   
+#btn-top:active{
+    transform: scale(0.95);
+}
+/* ///////////////////////////////////////////////////////////// Responsive */
+@media screen and (max-width: 768px){
+    html{
+        font-size: 12px;
+    }
+    .conteneur h1{
+        font-size: 40px;   
+    }
+    table{
+        width: 100%;
+        margin : 20px 0;  
+    }
+    .tableau, .tableau th, .tableau td {
+        font-size: 0.8rem;
+    }
+}
+body{
+    margin:0;
+    padding:0;
+    background-color: rgb(203, 141, 66);   
+
+}

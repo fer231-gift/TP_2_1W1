@@ -1,0 +1,35 @@
+/* ///////////////////////////////////// .menu */
+.menu{
+    position: fixed;
+    top:10px;
+    right:0;
+    width :10px;
+    padding-right: 280px;
+}
+
+.menu__a {
+    text-decoration: none;
+    display:inline-flex;
+    border: 1px solid #aaa; 
+    font-size: 1rem;
+    padding: 3px 5px;
+    justify-items: center;
+}
+
+.menu__a:link{
+ color:#ecf0f5;
+ background-color: rgba(0, 0, 0, 0.594);
+
+}
+.menu__a:visited{
+ color:#ecf0f5;
+ background-color: rgba(0, 0, 0, 0.594);
+}
+.menu__a:hover{
+ color:#ecf0f5;
+ background-color: rgba(0, 0, 0, 0.594);
+}
+.menu__a:active{
+ color:#ecf0f5;
+ background-color: rgba(0, 0, 0, 0.594);
+}
