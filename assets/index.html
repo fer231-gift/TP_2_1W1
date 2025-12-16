@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/menu.css">
+    <link rel="stylesheet" href="../assets/css/normalize.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <title>TP_2</title>
+</head>
+<body>
+<!------------------------------------ Accueil --------------------------------------------->
+    <div class="conteneur hero">
+        <header class="centre" id="accueil">
+          <h1>BasketKnowledge</h1>
+           
+            <form class="recherche">
+              <input class="recherche__input" placeholder="Rechercher" type="search">
+              <img class="recherche__img" src="https://s2.svgbox.net/hero-outline.svg?ic=search&color=000" width="25" height="25" alt="recherche"/>
+            </form>
+            <input type="checkbox" name="" id="chk-burger">
+            <label for="chk-burger">
+              <img src="https://s2.svgbox.net/materialui.svg?ic=menu&color=000" width="32" height="32">            
+            </label>  
+
+            <nav class="menu">
+                <a href="#accueil" class="menu__a">Accueil</a>
+                <a href="#inscription" class="menu__a">inscription</a>
+                <a href="#statistiques" class="menu__a">statistiques</a>
+                <a href="#News" class="menu__a">News</a>
+                <a href="#Galerie" class="menu__a">Galerie</a>
+                <a href="#Videos" class="menu__a">Videos</a>
+                <a href="#Pied de page" class="menu__a">Pied de page</a>
+            </nav>
+            <br>
+
+            <p>Soyes toujours au courant de c'est qui ce passe dans le monde <br>
+               du basketball dans un seul endroit. Statistiques, Joueurs et faits intéressants <br>
+                sur ce sport sont des choses que vous allez trouvez ici.</p>
+            <div class="bio">
+              <section class="pied__section">
+                <ul>
+                  <li>Luis Fernando Carrillo</li>
+                  <li>1W1-Mise en page Web</li>
+                  <li>Techniques d'Integration Multimedia</li>
+                  <li>College de Maisonneuve</li>
+                </ul>
+              </section>
+            </div>  
+        </header>
+    </div>
+
+<!---------------------------------------- Inscription --------------------------------------->
+
+<div class="conteneur inscription">
+<section class="centre" id="inscription">
+<h2>Inscription</h2>
+<form class="formulaire">
+
+<div class="form__nom">
+<label class="formulaire__label" for="nom">Nom:</label>
+<input class="formulaire__input" id="nom" type="text" placeholder="Entrez votre nom ici">
+</div>
+
+<div class="form__prenom">
+<label class="formulaire__label" for="prenom">Prénom:</label>
+<input class="formulaire__input" id="prenom" type="text" placeholder="Entrez votre prénom ici">
+</div>
+
+<div class="form__courriel">
+<label class="formulaire__label" for="courriel">Courriel:</label>
+<input class="formulaire__input" id="courriel" type="email" placeholder="Entrez votre courriel ici">
+</div>
+
+<fieldset>
+<input type="radio" name="rad-abonnement" id="rad-1" class="formulaire__rad">
+<label for="rad-1">Novice</label>
+
+<input type="radio" name="rad-abonnement" id="rad-2" class="formulaire__rad">
+<label for="rad-2">Intermédiaire</label>
+
+<input type="radio" name="rad-abonnement" id="rad-3" class="formulaire__rad">
+<label for="rad-3">Pro</label>
+</fieldset>
+
+<input class="formulaire__submit" type="submit" value="Valider l'inscription">
+</form>
+</section>
+</div>
+    
+<!---------------------------------------- Statistiques/Tableau --------------------------------------->
+
+<div class="conteneur">
+    <section class="centre" id="statistiques">
+        <h2 class="statistiques-h2">statistiques</h2>
+            <p>Le rêve de nombreux jeunes est de devenir un athlète professionnel dans leur sport préféré. <br>
+                Dans lequel le basket c'est le cas de beacoup enfants dans l'Amerique du Nord</p>
+            <p>Voici quelques mesures par position que le NBA prendre en consideration dans le <strong><em>draft</em></strong> de chaque année</p>
+  <table class="tableau">
+    <thead>
+      <tr>
+        <th class="title">Positions</th>
+        <th>Point Guard</th>
+        <th>Shooting Guard</th>
+        <th>Small Forward</th>
+        <th>Power Forward</th>
+        <th>Center</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th class="title">Height</td>
+        <td>192cm or 6'4"</td>
+        <td>195cm or 6'5"</td>
+        <td>199cm or 6'6"</td>
+        <td>203cm or 6'8"</td>
+        <td>211cm or 6'11"</td>
+      </tr>
+      <tr>
+        <th class="title">Wingspan</td>
+        <td>202cm or 79.5"</td>
+        <td>204cm or 80.6"</td>
+        <td>208cm or 82.2"</td>
+        <td>213cm or 83.8"</td>
+        <td>218cm or 86"  </td>
+      </tr>
+      <tr>
+        <th class="title">Standing Seach</td>
+        <td>250cm or 8'2"</td>
+        <td>257cm or 8'5"</td>
+        <td>265cm or 8'8"</td>
+        <td>272cm or 8'11"</td>
+        <td>281cm or 9.2"</td>
+      </tr>
+      <tr>
+        <th class="title">Max Vertical Jump</td>
+        <td>101cm or 40"</td>
+        <td>109cm 43"</td>
+        <td>106cm or 42"</td>
+        <td>101cm or 40"</td>
+        <td>93cm or 37"</td>
+      </tr>
+      <tr>
+        <th class="title">Standing Vertical jump</td>
+        <td>78cm or 30.8"</td>
+        <td>79cm or 31.4"</td>
+        <td>81cm or 32.2"</td>
+        <td>78cm or 31"</td>
+        <td>76cm or 30"</td>
+
+      </tr>
+    </section>
+  </tbody>
+</table>
+ 
+<div class="espace"></div>
+
+
+<!-------------------------------------------- Faits/Articles ------------------------------------------->
+
+<div class="conteneur">
+  <section class="centre" id="News">
+    <section class="principal-section">
+    <article class="section-article"> 
+      <h2 class="article_h2">News</h2>
+      <div class="grid">
+        <div>
+          <h3 class="article-h3">La competence pour le "Rookie" de l'année</h3>
+            <p>Chaque année, la NBA décerne le prix de la recrue de l'année au joueur le plus impressionnant de sa première saison dans la ligue. Ce prix est souvent attribué à un joueur qui a eu un impact immédiat sur son équipe et qui a démontré un talent exceptionnel. <br>
+              Les critères de sélection incluent les statistiques individuelles, l'impact sur l'équipe, et la capacité à s'adapter au niveau professionnel.
+            </p>
+            <p>Nous sommes rendues presque à la moitie de la saison 2025-26 et les favoris pour remporter ce prix sont Konn Kneppuel et Cooper Flag. </p>
+            <nav class="img-box">
+              <img class="ma-transformation" src="../assets/img/rookie of the year.png">     
+            </nav>
+        </div>
+        <div>
+          <h3 class="article-h3"> Les matchs pour noël</h3>
+            <p>La NBA organise chaque année des matchs spéciaux pour célébrer la période de Noël. Ces matchs sont souvent très attendus par les fans, car ils mettent en vedette certaines des meilleures équipes et des joueurs les plus talentueux de la ligue. <br>
+              Les matchs de Noël sont également l'occasion pour la NBA de promouvoir le basketball à l'échelle mondiale, en attirant l'attention des fans du monde entier.
+            </p>
+            <p>Cette année, les matchs de Noël promettent d'être particulièrement excitants, avec plusieurs affrontements très attendus entre des équipes de premier plan.</p>
+            <nav class="img-box">
+              <img class="ma-transformation" src="../assets/img/christmas-day-2025.jpg">     
+            </nav>
+        </div>
+      </div>
+    </article>
+  </section>
+</div>
+    
+<!------------------------------------------- Sections ----------------------------------------->
+
+<div class="conteneur">
+  <section class="centre" id="Galerie">
+      <main class="principal centre">
+        <h2>Galerie</h2>
+          <section class="principal-section">
+              <article class="section-article">
+                  <h3 class="article-h3">Olypic Team</h3>
+                  <p></p>
+                  <img class="ma-transformation" src="../assets/img/usa.webp" alt="Olypic Team" width="100" height="200">
+              </article>
+              <article class="section-article">
+                  <h3 class="article-h3">All Star</h3>
+                  <p></p>
+                  <img class="ma-transformation" src="../assets/img/all star.webp" alt="All star" width="100" height="150">
+              </article>
+              <article class="section-article">
+                  <h3 class="article-h3">NBA Cup</h3>
+                  <p></p>
+                  <img class="ma-transformation" src="../assets/img/nba cup.avif" alt="NBA Cup" width="200" height="150">
+              </article>
+              <article class="section-article">
+                  <h3 class="article-h3">NBA MVP</h3>
+                  <p></p>
+                  <img class="ma-transformation" src="../assets/img/NBA mvp.avif" alt="NBA MVP" width="200" height="150">
+              </article>
+              <article class="section-article">
+                  <h3 class="article-h3">Rookie of the year </h3>
+                  <p></p>
+                  <img class="ma-transformation" src="../assets/img/rookie-2025.avif" alt="Rookie of the year" width="150" height="200">
+                </article>
+              <article class="section-article">
+                  <h3 class="article-h3">Defnesive player of the year </h3>
+                  <p></p>
+                  <img class="ma-transformation" src="../assets/img/DPOY NBA.webp" alt="DPOY NBA" width="150" height="200">
+                </article>                    
+          </section>                
+        </main>
+    </div>
+  </section>
+</div>
+<!------------------------------------------- Sections ----------------------------------------->
+
+<div class="conteneur">
+  <section class="centre" id="Videos">
+    <h2>Videos</h2>
+      <article class="section-article">
+      <article>
+        <h3 class="article-h3">Konn Kneppuel hihlights</h3>
+          <a class="link" href="https://www.youtube.com/watch?v=V1d416HjaGQ&pp=ygUXa29uIGtudWVwcGVsIGhpZ2hsaWdodHM%3D" target="_blank"> Season 2025-26</a>      
+      </article>
+      <article>
+        <h3 class="article-h3">Cooper Flag hihlights</h3>
+          <a class="link" href="https://www.youtube.com/watch?v=NLhHVjYhfTM&pp=ygUbY29vcGVyIGZsYWdnIGhpZ2hsaWdodHMgbmJh" target="_blank"> Season 2025-26</a>      
+      </article>
+      <article>
+        <h3 class="article-h3"> MVP 2024-25 hihlights</h3>
+          <a class="link" href="https://www.youtube.com/watch?v=QGS2TBN6nBU&pp=ygUZbXZwIDIwMjQtMjUgaGlnaGxpZ2h0IG5iYQ%3D%3D" target="_blank"> Season 2024-25</a>      
+      </article>
+  </section>
+</div>
+
+<!------------------------------------------- Sections ----------------------------------------->
+    
+<div class="conteneur">
+  <section class="Pied centre" id="pied de page">
+    <h2>Pied de page</h2>
+    <div class="bas">
+
+      <section class="reseaux">
+        <h3>Réseaux Sociaux</h3>
+          <ul class="icons">
+            <li><img src="https://s2.svgbox.net/social.svg?ic=github&color=000000" width="20" height="20">Github</li>
+            <li><img src="https://s2.svgbox.net/social.svg?ic=facebook&color=0000ff" width="20" height="20">Facebook</li>
+            <li><img src="https://s2.svgbox.net/social.svg?ic=linkedin&color=008b8b" width="20" height="20">Linkedin</li>
+            <li><img src="https://s2.svgbox.net/social.svg?ic=messenger&color=0000ff" width="20" height="20">Messenger</li>
+            <li><img src="https://s2.svgbox.net/social.svg?ic=discord&color=8a2be2" width="20" height="20">Discord</li>
+          </ul>
+        </section>
+    
+      <section class="contact">
+        <h3>Contact</h3>
+          <p>Adresse: 3800 rue Sherbrooke est, Montréal, QC H1X 2A2</p>
+          <p>Téléphone: (514) 254-7131</p>
+          <p>Courriel: 12345@cmaisonneuve.qc.ca</p>
+      </section>
+    
+      <section class="description">
+        <p>Ce site a été créé dans le cadre d'un projet scolaire pour le cours de Mise en page Web au Collège de Maisonneuve. <br>
+          L'objectif principal de ce projet est de développer des compétences en conception et en intégration de contenu web, tout en mettant en pratique les connaissances acquises durant le cours. <br>
+          Le site vise à fournir des informations pertinentes et intéressantes sur le basketball, en combinant des éléments visuels attrayants avec un contenu informatif. <br>
+          J'espère que les visiteurs trouveront le site utile et agréable à naviguer.</p>
+      </section>
+
+      <div class="legal-note">
+        <p>Privacy Notice: This website does not collect personal data or use cookies. External links are subject to their own privacy policies.</p>
+      </div>
+    
+    </div>
+
+  </section>
+</div> 
+</body>
+</html>
